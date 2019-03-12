@@ -71,7 +71,7 @@ class BaseScreen: UIViewController {
         nameLabel.text = name
     } // end updateCharacterImage()
 
-    @objc func updateBackground(notification: NSNotification){
+@objc func updateBackground(notification: NSNotification){
         let isLight = notification.name == light
         let color = isLight ? UIColor.cyan : UIColor.red
         view.backgroundColor = color
